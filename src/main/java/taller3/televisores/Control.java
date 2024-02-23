@@ -3,8 +3,9 @@ package taller3.televisores;
 public class Control {
 	private TV tv;
 	
-	public void enlazarTV(TV tele) {
+	public void enlazar(TV tele) {
 		tv = tele;
+		tv.setControl(this);
 	}
 	public void turnOn() {
 		tv.turnOn();
